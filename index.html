@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <!-- Nombre de pestaña y metadatos (CHECAR Y AGREGAR MAS) -->
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE-edge">
+     <meta name="viewport" content="width-device-width, initial-scale=1.0">
+     <meta name="description" content="Portafolio de desarrollador, App developer, web developer, fullstack developer">
+     <meta name="keywords" content="Apps, development, best, hardwork">
+     <title>Rodrigo Martinez</title>
+
+     <style type="text/css">
+
+     html
+     {
+         scroll-behavior: smooth;
+         scroll-padding: 160px;
+     }
+
+     /*prueba de cambios*/
+
+    body{
+        margin: 0;
+        padding: 0;
+
+        color: white;
+        background-image: url("space_demo.png");
+        /* background-color: #8ABDE7; */
+        width: 100%;      
+        }
+    
+    header /*TODOS LOS HEADERS tendrán texto centrado y estaran centrados*/
+    {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #nav_bar
+    {   padding: 10px; 
+        text-align: left;
+
+         background-color: #000033;
+         border: 2px solid #000066;
+         border-radius: 2em;
+         width: 98%; 
+         /* height: 60px; */
+         position: fixed;
+         z-index: 100;
+    }
+
+    .nav_item
+    {   text-decoration: none;
+        text-shadow: 3px 3px 5px black;
+        display: inline-block;
+        margin-left: 35px;
+        border:rgb(105, 255, 143) 2px solid;
+        width: max-content;
+        border-radius: 2em;
+        padding: 5px;
+        background-color: white;
+    }
+
+    .nav_item:link
+    {
+        color: black;
+        display: inline-block;
+        margin-left: 35px;
+        border:rgb(105, 255, 143) 2px solid;
+        width: max-content;
+        border-radius: 2em;
+        padding: 5px;
+        background-color: white;
+    }
+
+    .nav_item:visited
+    {
+        color: white;
+        text-decoration: none;
+        text-shadow: 5px 5px 5px black;
+        display: inline-block;
+        margin-left: 35px;
+        border: 2px #6767B5 solid;
+        width: max-content;
+        border-radius: 2em;
+        padding: 8px;
+        background-color: #6767B5;
+    }
+
+    .nav_item:hover
+    {
+        color: white;
+        display: inline-block;
+        margin-left: 35px;
+        border: #6887A9 2px solid;
+        width: max-content;
+        border-radius: 2em;
+        padding: 5px;
+        background-color: #8AB6E8;
+    }
+
+    .nav_item:active
+    {
+        display: inline-block;
+        margin-left: 35px;
+        border:2px black solid;
+        width: max-content;
+        border-radius: 2em;
+        padding: 5px;
+        background-color: #330033;
+    }
+
+    div.a
+    {
+        text-align: center;
+    }
+
+    #Seccion_1
+    {
+        color: white;
+        text-align: center;
+        
+        margin-left: auto;
+        margin-right: auto;
+        margin: 10px;
+        border-radius: 2em;
+    }
+
+    .first_title_textbox
+    {
+        border: 4px #330033 solid;
+        border-radius: 2em;
+        background-color: #190032;
+        width: max-content;
+        margin: 5px auto 15px auto;
+    }
+
+    .first_title
+    {
+        margin: 5px auto 5px auto;
+        padding: 5px;
+        width: max-content;
+        
+        background-color: black;
+        background: linear-gradient(#190033,#CC00CC, white);
+
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+
+    }
+
+    header.Hero
+    {
+        /* background-image: url("space_demo.png"); */
+        /* background-color: #7a1369; */
+        align-items: center;
+        text-align: center;
+        padding-top: 50px;
+
+    }
+
+    .hero_textbox
+    {
+        color:#BADBFF;
+        border: solid #001933 5px; 
+        border-radius: 2em;
+        padding: 10px;
+        margin-top: -40px; 
+        width: 70%; /*Para no ocupar todo ancho del hero*/
+        text-align: center;
+        margin-left: auto;  /*Los margin left y right en auto son para que el cuadro*/
+        margin-right: auto; /*quede centrado en el hero*/
+        background-color: #002E62;
+
+        
+    }
+
+.proyects_header
+{
+    color: white;
+    text-shadow: black;
+    background-color: #190032;
+    border: 3px solid #36006C;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 2em;
+}
+
+    .projects_container
+    {   
+        background-color: red;
+        border: 3px solid #001464;
+        border-radius: 2em;
+        margin: 4px;
+        padding: 30px 0px 0px 0px;
+        width: 90%;
+        display: grid;
+         /* Aqui en "grid-template-columns" se define el WIDTH del objeto a cuadricular 
+         Here, on "grid-template-columns" it's defined the width of the object to be gridded
+         */
+        grid-template-columns: 20% 20% 20%;
+        grid-column-gap: 8%;  
+    
+        justify-items: center;
+        justify-content: center;
+
+        text-align: center;
+        align-content: center;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    div.Proyectos2/*PLACEHOLDER: de cada proyecto*/
+    {
+        color: white;/*Con la propiedad color cambiamos el color del texto */
+        border: solid white;
+        border-radius: 1em;
+        background-color: #000033; /*#003366; #595A87 */
+        margin-bottom: 5%;
+        margin-top: 10%;
+        padding: 10px 0px 15px 0px;
+
+        position: relative;
+    }
+
+    div.Proyectos/*PLACEHOLDER: de cada proyecto*/
+    {
+        color: white;/*Con la propiedad color cambiamos el color del texto */
+        border:solid white;
+        border-radius: 2em;
+        background-color: #003366;
+        margin-bottom: 5%;
+        margin-top: 10%;
+        padding: 10px 0px 15px 0px;
+
+        position: relative;
+    }
+
+    @keyframes move1 
+    {
+        from {top: 0px;}
+        to {top: -30px;}        
+    }
+
+    @keyframes move2 
+    {
+        from {top:-30px;}
+        to {top: 0px;}        
+    }
+
+    h1.Project_title
+    {
+        border: solid #99CCFF 2px;
+        background-color: #99CCFF;
+        text-shadow: 3px 3px 8px black;
+        border-radius: 0.4em;
+        font-size: 2vw;
+        margin: 2%;
+        margin-top: 10px;
+    }
+
+    h1.Project_title2
+    {
+        border: solid #6600CC 2px;
+        background-color: #330066;
+        text-shadow: 3px 3px 8px black;
+        border-radius: 0.4em;
+        font-size: 2vw;
+        margin: 2%;
+        margin-top: 10px;
+    }
+
+    .rin_prueba
+    {
+        content: url("rin_prueba2.png");
+        width: 50%; /* Definir de acuerdo al ancho de la imagen */
+        margin-top: 5%;
+        border-radius: 2em; 
+    }
+
+    .proyect_description
+    {
+        text-shadow: 3px 3px 8px black;
+        margin: 2%;
+        text-align: center;
+        text-justify: auto;
+        background-color: #001933;
+        border: 2px white solid;
+        border-radius: 0.4em;
+        padding: 5px;
+    }
+
+    .proyect_description2
+    {
+        text-shadow: 3px 3px 8px black;
+        margin: 2%;
+        text-align: center;
+        text-justify: auto;
+        background-color: #1161b6;
+        border: 2px white solid;
+        border-radius: 0.4em;
+        padding: 5px;
+    }
+
+    .tech_description
+    {
+        width: max-content;
+        text-shadow: 3px 3px 8px black;
+        margin: auto auto auto auto;
+        text-align: center;
+        text-justify: auto;
+        background-color: #001933;
+        border: 2px white solid;
+        border-radius: 0.4em;
+        padding: 5px;
+    }
+
+    .tech_description2
+    {
+        width: max-content;
+        text-shadow: 3px 3px 8px black;
+        margin: auto;
+        text-align: center;
+        text-justify: auto;
+        background-color: #1161b6;
+        border: 2px white solid;
+        border-radius: 0.4em;
+        padding: 5px;
+    }
+
+    .Description_title
+    {
+        color: #CCCCFF;
+        text-shadow: 3px 3px 8px white;
+        border-bottom: 5px transparent solid;
+        width: max-content;
+        margin: 10px auto 10px auto;
+    }
+
+    .Description_title2
+    {
+        margin: 10px auto 10px auto;
+        border-bottom: 5px #009999 solid;
+        width: max-content;
+    }
+
+                 /*SECCION DE REDES SOCIALES(SOCIAL MEDIA)*/  
+
+    #socialmedia_generalcontainer
+    {
+        background-color: #190032;
+        border: 3px solid #36006C;
+        border-radius: 2em;
+        margin: 0px 20px 0px 20px;
+    }
+
+    #socialmedia_container
+    {
+        
+        display: grid;
+        grid-template-columns: 20% 20% 20%;
+        grid-column-gap: 3%;
+
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+
+        width: 80%;
+        margin: 5px auto 20px auto;
+    }      
+    
+    .div_socialmedia_placeholder
+    {
+        margin-top: 20px;
+    }
+
+
+                 /* STILO DEL FORMULARIO (FORM STYLE)*/
+
+.form_body
+{
+    color: white;
+    padding: 20px;
+
+    border: 1px white solid;
+    border-radius: 2em;
+    width: 80%;
+    margin: 20px auto 20px auto;
+    background-color: black;
+}
+
+    #formulario
+    {   /*Centrar el formulario*/
+        margin: 0 auto;
+        width: 480px;
+        /*Esquema del formulario*/
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+        text-align: left;
+        background-color: slategrey;
+    }
+
+    ul
+    {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    form li + li
+    {
+        margin-top: 1em;
+    }
+
+    label
+    {/*Tamaño y alineación uniforme*/
+        display: inline-block;
+        width: 140px;
+        text-align: center;
+        border: 2px solid #000;
+        border-radius: 1em;
+        padding: 5px;
+        background-color: cornflowerblue;
+    }
+
+    #mensaje
+    {
+        width: 250px;
+        margin: 0;
+
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    input,textarea
+    {
+        /*Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+        'cause las areas de texto tienen un tipo de letra monoespaciada*/
+        font: 1em sans-serif;
+        /*Tamaño uniforme del campo de texto*/
+        width: 300px;
+        box-sizing: border-box;
+        /*Hacer coincidir los bordes del campo del formulario*/
+        border: 1px solid #999;
+
+    }
+
+    input:focus, textarea:focus
+    {
+        /*Destacado adicional para elementos que tienen el cursor*/
+        border-color: #000;
+    }
+
+    textarea
+    {
+        /*Alinear los campos de textto multilinea con sus etiquetas*/
+        vertical-align: top;
+        height: 5em;
+    }
+
+    .button
+    {
+        /*Alinear los botonos con el campo de texto*/
+        /*padding-left: 140px;/*El mismo tamaño que los elementos de la etiqueta*/
+        text-align: center;
+        /*margin-top: 10px;*/
+    }
+
+    /*button
+    {
+        /*Este margen adicional representa aproximadamente el mismo espacio que el que tienen
+        las etiquetas y sus campos de texto*/
+        /*margin-left: .5em;
+    }*/
+
+    /*FOOTER PLACE: AQUI VA EL CODIGO CSS DEL PIE DE PAGINA*/
+    .footer
+    {
+        text-align: center;
+        margin: 10px auto 10px auto;
+        width: 70%;
+
+        border: 1px white solid;
+        border-radius: 2em;
+    }
+
+    </style>
+
+ </head>
+
+ <!-- COMIENZO DEL CUERPO DEL PORTAFOLIO -->
+ <body>
+     <!-- Barra de navegacion -->
+    <header id="nav_bar">
+        <nav>
+            <!-- <img src="zinnia_cartoon.png" width="50px"  style="align-content: center; position: absolute;"> -->
+            <!-- <p class="nav_item"> Hola a todos</p> -->
+            <a class="nav_item" href="#Seccion_1">INICIO</a>
+            <a class="nav_item" href="#projects_container">PROYECTOS</a>
+            <a class="nav_item" href="#Contacto">CONTACTO</a>
+            <a class="nav_item" href="#socialmedia_container">REDES SOCIALES</a>
+        </nav>
+<!-- Agregar un apartado para el cambio de lenguaje -->
+    </header>
+
+<!-- PRIMERA PARTE: Informacion de quien eres y lo que haces (PRESENTACION) o HERO -->
+    <!-- VER COMO CENTRAL EL HEADER -->
+    <header class="Hero">
+        <!--
+        <img src="zinnia_cartoon.png" alt="Imagen de prueba" width="200px" style="border:solid yellow 5px; border-radius: 200px; padding: 20px; background-color: teal;">
+        -->
+        <div id="Seccion_1">
+
+            <div class="first_title_textbox">
+                <h1 class="first_title">WELCOME!</h1>
+            </div>
+
+            <img src="zinnia_sitting_2.png" alt="ZInnia sentada" width="250px">
+
+            <h1 class="hero_textbox">
+                Hi! I'm Rodrigo Martinez (best-known by Yami3010) an app, 
+                web and fullstack developer, with a great capacity to complete 
+                a lot of projects.</h1>
+
+        </div>
+
+    </header>
+
+
+    <!-- SEGUNDA PARTE: Acumulacion de todos los proyectos que has hecho y descripcion de cada uno de ellos -->
+    <!-- VER COMO CENTRAL EL HEADER -->
+    <header class="proyects_header">
+        <h1>PROYECTOS</h1>
+        <p>Los proyectos en los que he trabajo son los siguientes:</p>
+        <!-- Darles formato a cada uno de los proyectos como un cuadro de pura informacion
+        donde al darles click se abra una ventana "popup" que desgloce mas informacion
+        y que cuando pases el mouse por la seccion se oscuresca y ponga una breve descripcion de lo que es
+        -->
+        <div id="projects_container" class="projects_container">
+            
+        </div>
+    </header>
+
+                <!--
+                    TERCERA PARTE: FORMULARIO
+                -->
+
+    <header class="form_body">
+        <h1>MANTENTE EN CONTACTO :)</h1>
+        <p>Si deseas conocer mas sobre mi trabajo o contactarme para ayudarte en un proyecto, puedes llenar el siguiente formulario y te responderé a la brevedad.</p>
+    
+        <div id="Contacto">
+
+            <form id="formulario">
+                <ul>
+                    <li>
+                        <label for="username">¿Cuál es tu nombre?:</label>
+                        <input type="text" id="username" placeholder="Rodrigo Martinez">
+                    </li>           
+                    <li>
+                        <label for="email">Correo electronico: </label>
+                        <input type="email" id="email" placeholder="rodrigo1234@gmail.com">
+                    </li>
+                    <li>
+                        <label>Mensaje:</label>
+                        <textarea id="mensaje" placeholder="Hola Rodrigo, me contacto contigo para el siguiente proyecto..."></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">ENVIAR EL MENSAJE</button>
+                        <button type="">REINICIO</button>
+                    </li>
+                </ul>
+            </form>
+
+        </div>
+    
+    </header>
+
+                    <!--
+                        CUARTA PARTE: REDES SOCIALES
+                    -->
+<header id="socialmedia_generalcontainer">
+<h1>REDES SOCIALES</h1>
+<p>Si gustas puedes pasar a mis redes sociales para contactarme. :)</p>
+
+<div id="socialmedia_container">
+    <!--Hacer un div automatizado que me muestre una imagen con texto-->
+
+    <!--DIV DE PRUEBA-->
+    <div class="div_socialmedia_placeholder">
+<ul>
+    <li>
+        <img src="zinnia_appicon.png" width="55%" style="border-radius: 1em;">
+    </li>
+    <li style="margin-top: 15px;">
+        <a href="https://duckduckgo.com/" style="color: white;">TWITTER</a>
+    </li>
+</ul>
+    </div>
+
+    <div class="div_socialmedia_placeholder">
+        <img src="zinnia_appicon.png" width="55%" style="border-radius: 1em;">
+        <p style="color: white;">INSTAGRAM</p>
+    </div>
+
+    <div class="div_socialmedia_placeholder">
+        <ul>
+            <li>
+                <img src="zinnia_appicon.png" width="55%" style="border-radius: 1em;">
+            </li>
+            <li style="margin-top: 15px;">
+                <a href="https://duckduckgo.com/" style="color: white;">LINKEDIN</a>
+            </li>
+        </ul>
+            </div>
+
+</div>
+
+</header>
+                    
+<footer class="footer">
+    <h1>LEMA:</h1>
+    <p>Inserta tu lema aqui XD</p>
+</footer>
+
+ </body>
+
+ <!--/////////////////////////////////////////////////////////////////////-->
+                      <!--JAVASCRIPT CODE-->
+ <!--/////////////////////////////////////////////////////////////////////-->
+
+ <script>
+     /*DECLARACION DE VARIABLES
+        VARIABLES DECLARATION
+     */
+
+     const datos =
+     [
+        { 
+        proyect_name: "ZINNIA'S TIME",
+        src: 'zinnia_appicon.png', 
+        descripcion: 'A mobile application designed to help you to be more productive in your activities, where you can see your progress In all of them, building your path to be the best form of you each day.',
+        technologies: 'Android Studio, Java, Kotlin'
+        }
+
+        ,{ 
+        proyect_name: "ZINNIA'S TIME <br /> (Browser's port)",
+        src: 'zinnia_appicon.png', 
+        descripcion: 'Descripcion 2: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt vero similique, eius molestiae sequi nobis perspiciatis nam amet inventore tempore assumenda. Odio dolores veritatis quo aut aspernatur commodi, reiciendis suscipit.',
+        technologies:''
+        }
+
+        ,{ 
+        proyect_name: 'PORTAFOLIO',
+        src: 'zinnia_sitting_2.png', 
+        descripcion: 'A web page where people can know who I am, what I do and have a very quick view of all the proyects that I have done and also very proud of them.<br><br>All the projects that are here have been developed by me with a lot of dedication and efford having the ideal of give a help to the sociaty, feel free to check one by one and let me know what do you think about them. That will be helpful for me.',
+        technologies:'HTML, CSS and Javascript'
+        }
+
+        ,{ 
+        proyect_name: 'PROYECTO 4',
+        src: 'rin_prueba2.png', 
+        descripcion: 'Descripcion 4: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt vero similique, eius molestiae sequi nobis perspiciatis nam amet inventore tempore assumenda. Odio dolores veritatis quo aut aspernatur commodi, reiciendis suscipit.',
+        technologies:''
+        }
+
+        ,{ 
+        proyect_name: 'PROYECTO 5',
+        src: 'rin_prueba2.png', 
+        descripcion: 'Descripcion 5: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt vero similique, eius molestiae sequi nobis perspiciatis nam amet inventore tempore assumenda. Odio dolores veritatis quo aut aspernatur commodi, reiciendis suscipit.',
+        technologies:''
+        }
+        
+        ,{
+        proyect_name: 'PROYECTO 6',
+        src: 'rin_prueba2.png', 
+        descripcion: 'DESCRIPCION 6',
+        technologies:''
+        }
+
+        ,{
+        proyect_name: 'PROYECTO 7',
+        src: 'rin_prueba2.png', 
+        descripcion: 'DESCRIPCION 7',
+        technologies:''
+        }
+     
+    
+    ]
+
+    console.log('hello world');
+    let proyectos = document.querySelector('#projects_container');
+    console.log('proyectos');
+    proyectos.style.background = '#000A33';
+    let id_count = 0;
+
+     function proyect_maker(proyect_name,src,descripcion,technologies)
+     {
+        /*  CREACION DE VARIABLES*/
+        let div = document.createElement("div");
+        let title = document.createElement('h1');
+        let img = document.createElement("img");
+        let p_title = document.createElement("p");
+        let p  = document.createElement("p"); 
+        let tec_title = document.createElement("p");
+        let tech = document.createElement("p");
+
+        /*  ASIGNACION DE DATOS A VARIABLES*/
+        //Div GENERAL (CONTENEDOR DE TODO EL PROYECTO)
+        div.className = 'Proyectos';
+        div.id = 'div'+id_count;
+
+        //TITULO DEL PROYECTO
+        title.className = 'Project_title';
+        title.innerHTML = proyect_name;
+        title.id = 'title'+id_count;
+
+        //IMAGEN DEL PROYECTO
+        img.src = src;
+        img.className = 'rin_prueba';
+
+        //DESCRIPTION HEADER
+        p_title.innerHTML = "DESCRIPTION";
+        p_title.id = 'desc_title'+id_count;
+        p_title.className = 'Description_title';
+
+        //DESCRIPCION DEL PROYECTO
+        p.innerHTML = descripcion;
+        p.id = 'description'+id_count;
+        p.className = 'proyect_description';
+
+        //TECHNOLOGIES HEADER
+        tec_title.innerHTML = 'TECHNOLOGIES';
+        tec_title.id = 'tech_title'+id_count;
+        tec_title.className = 'Description_title';
+
+        //TECNOLOGIAS USADAS
+        tech.innerHTML = technologies;
+        tech.className = 'tech_description';
+        tech.id = 'tech'+id_count;
+
+        //Contador para generar los id de todos los elementos
+        id_count++;
+
+        /*AGREGAR LOS DATOS AL CONTENEDOR (DIV)*/
+        div.appendChild(title);
+        div.appendChild(img);
+        div.appendChild(p_title);
+        div.appendChild(p);
+        div.appendChild(tec_title);
+        div.appendChild(tech);
+
+        /*AGREGAR EL DIV AL CONTENEDOR (GRID)*/
+        proyectos.appendChild(div);
+
+
+     }
+
+     datos.forEach(({proyect_name, src, descripcion,technologies}) => proyect_maker(proyect_name, src, descripcion,technologies))
+
+/*FUNCION PARA CAMBIO DE COLORES EN EL BORDE DEL PROYECTO QUE SE SELECCIONE*/
+
+//Declaramos como variables a todos los "div" de los proyectos.
+   var element0 = document.getElementById("div0");
+   var title0 = document.getElementById("title0");
+   var description0 = document.getElementById("description0");
+   var tech0 = document.getElementById("tech0");
+   var desc_title0 = document.getElementById("desc_title0");
+   var tech_title0 = document.getElementById("tech_title0");
+
+   var element1 = document.getElementById("div1");
+   var title1 = document.getElementById("title1");
+   var description1 = document.getElementById("description1");
+   var tech1 = document.getElementById("tech1");
+   var desc_title1 = document.getElementById("desc_title1");
+   var tech_title1 = document.getElementById("tech_title1");
+
+   var element2 = document.getElementById("div2");
+   var title2 = document.getElementById("title2");
+   var description2 = document.getElementById("description2");
+   var tech2 = document.getElementById("tech2");
+   var desc_title2 = document.getElementById("desc_title2");
+   var tech_title2 = document.getElementById("tech_title2");
+
+   var element3 = document.getElementById("div3");
+   var title3 = document.getElementById("title3");
+   var description3 = document.getElementById("description3");
+   var tech3 = document.getElementById("tech3");
+   var desc_title3 = document.getElementById("desc_title3");
+   var tech_title3 = document.getElementById("tech_title3");
+
+   var element4 = document.getElementById("div4");
+   var title4 = document.getElementById("title4");
+   var description4 = document.getElementById("description4");
+   var tech4 = document.getElementById("tech4");
+   var desc_title4 = document.getElementById("desc_title4");
+   var tech_title4 = document.getElementById("tech_title4");
+
+   var element5 = document.getElementById("div5");
+   var title5 = document.getElementById("title5");
+   var description5 = document.getElementById("description5");
+   var tech5 = document.getElementById("tech5");
+   var desc_title5 = document.getElementById("desc_title5");
+   var tech_title5 = document.getElementById("tech_title5");
+
+   var element6 = document.getElementById("div6");
+   var title6 = document.getElementById("title6");
+   var description6 = document.getElementById("description6");
+   var tech6 = document.getElementById("tech6");
+   var desc_title6 = document.getElementById("desc_title6");
+   var tech_title6 = document.getElementById("tech_title6");
+
+ //Variable que NO permite que se ejecute varias veces la función de cambio de colores.
+   var estabilizador = 0;
+   var regulador = 0; 
+
+//FUNCION GENERAL para ejecutar acciones cuando el mouse este en o fuera de un elemento en especifico.
+window.onload = function()
+{   
+    // El contenido de esta funcion se ejecutara cuanso el mouse
+	// pase por encima del elementO
+    element0.onmouseover = function()
+    {
+    //proyectos.style.background = '#99CCFF';
+    element0.className = 'Proyectos2';
+    title0.className = 'Project_title2';
+    description0.className = 'proyect_description2';
+    tech0.className = 'tech_description2';
+    desc_title0.className = 'Description_title2';
+    tech_title0.className = 'Description_title2';
+
+    element0.style.animation = 'move1 1s 1';
+    element0.style.animationFillMode = "forwards";
+
+        //Si la funcion no se ha activado entonces, la activamos y especificamos que se ha activado.
+        if(estabilizador == 0)
+        {
+            //LLamamos a la funcion de color.
+            colorchange(element0);
+            //Indicamos que la funcion esta ejecutandose.
+            estabilizador = 1;
+            regulador = 1;
+        }
+
+        //Indicamos que la funcion esta activada,
+        else
+        {
+            console.log("La funcion esta activada");
+        }
+    
+    }
+
+    // El contenido de esta funcion se ejecutara cuanso el mouse
+	// pase por encima del elemento
+    element0.onmouseleave = function()
+    {
+        estabilizador = 0;
+        element0.className="Proyectos";
+        title0.className = 'Project_title';
+        description0.className = 'proyect_description';
+        tech0.className = 'tech_description'
+        desc_title0.className = 'Description_title';
+        tech_title0.className = 'Description_title';
+
+        element0.style.animation = 'move2 1s 1';
+        element0.style.animationFillMode = "forwards";
+
+        element0.style.borderColor = "white";
+    }
+
+
+        // El contenido de esta funcion se ejecutara cuanso el mouse
+	// pase por encima del elementO
+    element1.onmouseover = function()
+    {
+    //proyectos.style.background = '#99CCFF';
+    element1.className = 'Proyectos2';
+    title1.className = 'Project_title2';
+    description1.className = 'proyect_description2';
+    tech1.className = 'tech_description2';
+    desc_title1.className = 'Description_title2';
+    tech_title1.className = 'Description_title2';
+
+    element1.style.animation = 'move1 1s 1';
+    element1.style.animationFillMode = "forwards";
+
+        //Si la funcion no se ha activado entonces, la activamos y especificamos que se ha activado.
+        if(estabilizador == 0)
+        {
+            //LLamamos a la funcion de color.
+            colorchange(element1);
+            //Indicamos que la funcion esta ejecutandose.
+            estabilizador = 1;
+            regulador = 1;
+        }
+
+        //Indicamos que la funcion esta activada,
+        else
+        {
+            console.log("La funcion esta activada");
+        }
+    
+    }
+
+    // El contenido de esta funcion se ejecutara cuanso el mouse
+	// pase por encima del elemento
+    element1.onmouseleave = function()
+    {
+        estabilizador = 0;
+        element1.className="Proyectos";
+        title1.className = 'Project_title';
+        description1.className = 'proyect_description';
+        tech1.className = 'tech_description'
+        desc_title1.className = 'Description_title';
+        tech_title1.className = 'Description_title';
+
+        element1.style.animation = 'move2 1s 1';
+        element1.style.animationFillMode = "forwards";
+
+        element1.style.borderColor = "white";
+    }
+
+        // El contenido de esta funcion se ejecutara cuanso el mouse
+	// pase por encima del elementO
+    element2.onmouseover = function()
+    {
+    //proyectos.style.background = '#99CCFF';
+    element2.className = 'Proyectos2';
+    title2.className = 'Project_title2';
+    description2.className = 'proyect_description2';
+    tech2.className = 'tech_description2';
+    desc_title2.className = 'Description_title2';
+    tech_title2.className = 'Description_title2';
+
+    //Animation UP instructions
+    element2.style.animation = 'move1 1s 1';
+    element2.style.animationFillMode = "forwards";
+
+        //Si la funcion no se ha activado entonces, la activamos y especificamos que se ha activado.
+        if(estabilizador == 0)
+        {
+            //LLamamos a la funcion de color.
+            colorchange(element2);
+            //Indicamos que la funcion esta ejecutandose.
+            estabilizador = 1;
+            regulador = 1;
+        }
+
+        //Indicamos que la funcion esta activada,
+        else
+        {
+            console.log("La funcion esta activada");
+        }
+    
+    }
+
+    // El contenido de esta funcion se ejecutara cuanso el mouse
+	// pase por encima del elemento
+    element2.onmouseleave = function()
+    {
+        estabilizador = 0;
+        element2.className="Proyectos";
+        title2.className = 'Project_title';
+        description2.className = 'proyect_description';
+        tech2.className = 'tech_description'
+        desc_title2.className = 'Description_title';
+        tech_title2.className = 'Description_title';
+
+        //Animation DOWN instructions
+        element2.style.animation = 'move2 1s 1';
+        element2.style.animationFillMode = "forwards";
+
+        element2.style.borderColor = "white";
+    }
+
+        // El contenido de esta funcion se ejecutara cuanso el mouse
+	// pase por encima del elementO
+    element3.onmouseover = function()
+    {
+    //proyectos.style.background = '#99CCFF';
+    element3.className = 'Proyectos2';
+    title3.className = 'Project_title2';
+    description3.className = 'proyect_description2';
+    tech3.className = 'tech_description2';
+    desc_title3.className = 'Description_title2';
+    tech_title3.className = 'Description_title2';
+
+    //Animation UP instructions
+    element3.style.animation = 'move1 1s 1';
+    element3.style.animationFillMode = "forwards";
+
+        //Si la funcion no se ha activado entonces, la activamos y especificamos que se ha activado.
+        if(estabilizador == 0)
+        {
+            //LLamamos a la funcion de color.
+            colorchange(element3);
+            //Indicamos que la funcion esta ejecutandose.
+            estabilizador = 1;
+        }
+
+        //Indicamos que la funcion esta activada,
+        else
+        {
+            console.log("La funcion esta activada");
+        }
+    
+    }
+
+    // El contenido de esta funcion se ejecutara cuanso el mouse
+	// pase por encima del elemento
+    element3.onmouseleave = function()
+    {
+        estabilizador = 0;
+        element3.style.borderColor = "white";
+        element3.className="Proyectos";
+        title3.className = 'Project_title';
+        description3.className = 'proyect_description';
+        tech3.className = 'tech_description'
+        desc_title3.className = 'Description_title';
+        tech_title3.className = 'Description_title';
+
+        //Animation DONW instructions
+        element3.style.animation = 'move2 1s 1';
+        element3.style.animationFillMode = "forwards";
+
+        
+    }
+
+        // El contenido de esta funcion se ejecutara cuanso el mouse
+	// pase por encima del elementO
+    element4.onmouseover = function()
+    {
+    //proyectos.style.background = '#99CCFF';
+    element4.className = 'Proyectos2';
+    title4.className = 'Project_title2';
+    description4.className = 'proyect_description2';
+    tech4.className = 'tech_description2';
+    desc_title4.className = 'Description_title2';
+    tech_title4.className = 'Description_title2';
+
+    //Animation UP instructions
+    element4.style.animation = 'move1 1s 1';
+    element4.style.animationFillMode = "forwards";
+
+        //Si la funcion no se ha activado entonces, la activamos y especificamos que se ha activado.
+        if(estabilizador == 0)
+        {
+            //LLamamos a la funcion de color.
+            colorchange(element4);
+            //Indicamos que la funcion esta ejecutandose.
+            estabilizador = 1;
+        }
+
+        //Indicamos que la funcion esta activada,
+        else
+        {
+            console.log("La funcion esta activada");
+        }
+    
+    }
+
+    // El contenido de esta funcion se ejecutara cuanso el mouse
+	// pase por encima del elemento
+    element4.onmouseleave = function()
+    {
+        estabilizador = 0;
+        element4.className="Proyectos";
+        title4.className = 'Project_title';
+        description4.className = 'proyect_description';
+        tech4.className = 'tech_description'
+        desc_title4.className = 'Description_title';
+        tech_title4.className = 'Description_title';
+
+        //Animation DOWN instructions
+        element4.style.animation = 'move2 1s 1';
+        element4.style.animationFillMode = "forwards";
+
+        element4.style.borderColor = "white";
+    }
+
+        // El contenido de esta funcion se ejecutara cuanso el mouse
+	// pase por encima del elementO
+    element5.onmouseover = function()
+    {
+    //proyectos.style.background = '#99CCFF';
+    element5.className = 'Proyectos2';
+    title5.className = 'Project_title2';
+    description5.className = 'proyect_description2';
+    tech5.className = 'tech_description2';
+    desc_title5.className = 'Description_title2';
+    tech_title5.className = 'Description_title2';
+
+    //Animation UP instructions
+    element5.style.animation = 'move1 1s 1';
+    element5.style.animationFillMode = "forwards";
+
+        //Si la funcion no se ha activado entonces, la activamos y especificamos que se ha activado.
+        if(estabilizador == 0)
+        {
+            //LLamamos a la funcion de color.
+            colorchange(element5);
+            //Indicamos que la funcion esta ejecutandose.
+            estabilizador = 1;
+        }
+
+        //Indicamos que la funcion esta activada,
+        else
+        {
+            console.log("La funcion esta activada");
+        }
+    
+    }
+
+    // El contenido de esta funcion se ejecutara cuanso el mouse
+	// pase por encima del elemento
+    element5.onmouseleave = function()
+    {
+        estabilizador = 0;
+        element5.className="Proyectos";
+        title5.className = 'Project_title';
+        description5.className = 'proyect_description';
+        tech5.className = 'tech_description'
+        desc_title5.className = 'Description_title';
+        tech_title5.className = 'Description_title';
+
+    //Animation DOWN instructions
+        element5.style.animation = 'move2 1s 1';
+        element5.style.animationFillMode = "forwards";
+
+        element5.style.borderColor = "white";
+    }
+
+    // El contenido de esta funcion se ejecutara cuanso el mouse
+	// pase por encima del elementO
+    element6.onmouseover = function()
+    {
+    //proyectos.style.background = '#99CCFF';
+    element6.className = 'Proyectos2';
+    title6.className = 'Project_title2';
+    description6.className = 'proyect_description2';
+    tech6.className = 'tech_description2';
+    desc_title6.className = 'Description_title2';
+    tech_title6.className = 'Description_title2';
+
+    //Animation UP instructions
+    element6.style.animation = 'move1 1s 1';
+    element6.style.animationFillMode = "forwards";
+
+        //Si la funcion no se ha activado entonces, la activamos y especificamos que se ha activado.
+        if(estabilizador == 0)
+        {
+            //LLamamos a la funcion de color.
+            colorchange(element6);
+            //Indicamos que la funcion esta ejecutandose.
+            estabilizador = 1;
+        }
+
+        //Indicamos que la funcion esta activada,
+        else
+        {
+            console.log("La funcion esta activada");
+        }
+    
+    }
+
+    // El contenido de esta funcion se ejecutara cuanso el mouse
+	// pase por encima del elemento
+    element6.onmouseleave = function()
+    {
+        estabilizador = 0;
+        element6.className="Proyectos";
+        title6.className = 'Project_title';
+        description6.className = 'proyect_description';
+        tech6.className = 'tech_description'
+        desc_title6.className = 'Description_title';
+        tech_title6.className = 'Description_title';
+
+    //Animation DOWN instructions
+        element6.style.animation = 'move2 1s 1';
+        element6.style.animationFillMode = "forwards";
+
+        element6.style.borderColor = "white";
+    }
+
+}
+
+function colorchange(elemento)
+{
+    var total = 10;
+    var inicio = 0;
+    var final = 0;
+
+    var R = 255;
+    var G = 0;
+    var B = 0;
+
+    var set = 1;
+
+    var x1 = setInterval(function()
+        {
+            if (estabilizador ==0)
+                {
+                    clearInterval(x1);
+                    regulador = 0;
+                    elemento.style.borderColor = "white"; //Intruccion necesaria para evitar un enclave en el color del borde.
+                }
+
+            else if(G<255 && R == 255 && B == 0 && estabilizador ==1)
+                {
+                    G = G+15;
+                    console.log(G);
+                    console.log(estabilizador);
+                    elemento.style.borderColor = 'rgb('+R+', '+G+', '+B+')';
+                }
+
+                else if (G == 255 && B == 0 && R>0 && estabilizador ==1)
+                {
+                    R = R-15;
+                    console.log("R = "+R);
+                    elemento.style.borderColor = 'rgb('+R+', '+G+', '+B+')';
+                }
+
+                else if(G == 255 && R ==0 && B<255 && estabilizador ==1)
+                {
+                    B = B+15;
+                    console.log("B = "+B);
+                    elemento.style.borderColor = 'rgb('+R+', '+G+', '+B+')';
+                }
+
+                else if(B == 255 && R ==0 && G>0 && estabilizador ==1)
+                {
+                    G = G-15;
+                    console.log("G = "+G);
+                    elemento.style.borderColor = 'rgb('+R+', '+G+', '+B+')';
+                }
+
+                else if(B == 255 && G ==0 && R<255 && estabilizador ==1)
+                {
+                    R = R+15;
+                    console.log("R = "+R);
+                    elemento.style.borderColor = 'rgb('+R+', '+G+', '+B+')';
+                }
+
+                else if(R == 255 && G ==0 && B>0 && estabilizador ==1)
+                {
+                    B = B-15;
+                    console.log("B = "+B);
+                    elemento.style.borderColor = 'rgb('+R+', '+G+', '+B+')';
+                }
+
+                else 
+                {
+                    clearInterval(x1);
+                    regulador = 0;
+                    elemento.style.borderColor = "white"; //Intruccion necesaria para evitar un enclave en el color del borde.
+                }
+
+        },100);
+
+}
+
+</script>
+
+</html>
