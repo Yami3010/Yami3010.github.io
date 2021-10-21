@@ -563,19 +563,24 @@
     
         <div id="Contacto">
 
-            <form id="formulario" action="enviar_formulario.php" method="post">
+            <form id="formulario" netlify>
+                <!--Ya funciona el formulario con PHP, el problema es que es necesario un hosting
+                de pago para enviar correos. parte del codigo para hacerlo funcionar con PHP:
+
+                <form id="formulario" action="enviar_formulario.php" method="post">
+                -->
                 <ul>
                     <li>
                         <label for="username">¿Cuál es tu nombre?:</label>
-                        <input type="text" id="username" placeholder="Rodrigo Martinez">
+                        <input type="text" id="username" name="username" placeholder="Rodrigo Martinez">
                     </li>           
                     <li>
                         <label for="email">Correo electronico: </label>
-                        <input type="email" id="email" placeholder="rodrigo1234@gmail.com">
+                        <input type="email" id="email" name="email" placeholder="rodrigo1234@gmail.com">
                     </li>
                     <li>
                         <label>Mensaje:</label>
-                        <textarea id="mensaje" placeholder="Hola Rodrigo, me contacto contigo para el siguiente proyecto..."></textarea>
+                        <textarea id="mensaje" name="mensaje" placeholder="Hola Rodrigo, me contacto contigo para el siguiente proyecto..."></textarea>
                     </li>
                     <li class="button">
                         <button type="submit">ENVIAR EL MENSAJE</button>
