@@ -10,3 +10,4 @@ $mensaje = $_POST['mensaje'];
 $msg = "Nombre: ".$username."\n"."correo: ".$email."\n"."Mensaje: ".$mensaje;
 mail($target,"MENSAJE",$msg);
 header("location:index.html");
+?>
