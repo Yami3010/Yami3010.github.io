@@ -27,13 +27,17 @@
 
      /*prueba de cambios*/
 
+     .contenedor_general
+     {
+         background-color: black;
+     }
+
     body{
         margin: 0;
         padding: 0;
 
         color: white;
-        background-image: url("space_demo.png");
-        /* background-color: #8ABDE7; */
+        /* background-image: url("space_demo.png"); */
         width: 100%;      
         }
     
@@ -51,7 +55,7 @@
          background-color: #000033;
          border: 2px solid #000066;
          border-radius: 2em;
-         width: 98%; 
+         width: 100%; 
          /* height: 60px; */
          position: fixed;
          z-index: 100;
@@ -75,7 +79,9 @@
         display: inline-block;
         margin-left: 35px;
         border: 2px #6767B5 solid;
-        width: max-content;
+        width: 8%;
+        text-align: center;
+        font-size: 0.8vw;
         border-radius: 2em;
         padding: 5px;
         background-color: #6767B5;
@@ -101,7 +107,7 @@
         display: inline-block;
         margin-left: 35px;
         border: #6887A9 2px solid;
-        width: max-content;
+        width: 2%;
         border-radius: 2em;
         padding: 5px;
         background-color: #8AB6E8;
@@ -164,7 +170,6 @@
         align-items: center;
         text-align: center;
         padding-top: 50px;
-
     }
 
     .hero_textbox
@@ -172,6 +177,7 @@
         color:#BADBFF;
         border: solid #001933 5px; 
         border-radius: 2em;
+        box-sizing: border-box;
         padding: 10px;
         margin-top: -40px; 
         width: 70%; /*Para no ocupar todo ancho del hero*/
@@ -384,6 +390,49 @@
         margin-top: 20px;
     }
 
+                /*Cuadro de titulo del formulario*/
+
+    .form_title
+    {  
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        height: 30%;
+        /* border: 2px solid turquoise; */
+        margin: auto auto auto auto;
+    }
+
+    .zinnia_form
+    {
+        /* position: relative;
+        left: 70%;
+        bottom: 100px; */
+        /* margin: auto auto auto auto; */
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 20%;
+        height: 50%;
+        content: url("zinnia_cartoon.png");
+        /* border: aqua solid 2px; */
+        /* margin: 0; */
+    }
+
+    .form_title_msg
+    {
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 40%;
+        height: 50%;
+        font-size: 2.5vh; 
+
+        background-color: black;
+        background: linear-gradient(#006666,#66FFFF);
+
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+
                 /* VENTANA DE EMERGENCIA DEL FORMULARIO */
 
                 /*La "emergent_box" es una caja de texto que aparece para agradecer por el 
@@ -392,14 +441,75 @@
 
 .emergent_box
 {
-    text-align: center;
-    color: black;
-    background-color: white;
-    width: 30%;
-    min-height: 200px;
+    color: white;
+    background-color: #001933;
+    border: 2px solid white;
+    border-radius: 2em;
+    width: 40%;
+    min-height: 210px;
     position: absolute;
-    left: 35%;
+    left: 30%;
     display: none;
+    padding: 0;
+}
+
+.gratefulness_box
+{
+    /* border: aqua solid 2px;  */
+    margin: auto auto auto auto;
+    width: 100%;
+    min-height: 100px;
+    padding: 0;
+}
+
+.gratefulness_msg
+{
+    font-size: 20px;
+    margin-top: 30px; 
+}
+
+.zinnia_thanks
+{
+    color: black;
+    background-color: transparent;
+    /* border: coral solid 2px;  */
+    margin: auto auto auto auto;
+    width: 30%;
+    content: url("zinnia_sitting_2.png");
+
+}
+
+.button_sectionbox
+{
+    height: 40px;
+    /* border: coral solid 2px; */
+}
+
+.close_button
+{
+    width: 10%;
+    height: 30px;
+    margin: 5px auto 0px auto;
+
+    background-color: turquoise;
+    border: 2px solid black;
+    border-radius: 2em;
+}
+
+.close_button:hover
+{
+    color: white;
+    background-color: rgb(33, 170, 175);
+    border: 2px solid black;
+    border-radius: 2em;
+}
+
+.close_button:active
+{
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 2em;
 }
 
                  /* STILO DEL FORMULARIO (FORM STYLE)*/
@@ -409,11 +519,11 @@
     color: white;
     padding: 20px;
 
-    border: 1px white solid;
+    border: 2px #00CCCC solid;
     border-radius: 2em;
     width: 80%;
     margin: 20px auto 20px auto;
-    background-color: black;
+    background-color: #1E1F24;
 }
 
     #formulario
@@ -422,10 +532,10 @@
         width: 480px;
         /*Esquema del formulario*/
         padding: 1em;
-        border: 1px solid #CCC;
+        border: 2px solid #CCC;
         border-radius: 1em;
         text-align: left;
-        background-color: slategrey;
+        background-color: #660033;
     }
 
     ul
@@ -433,22 +543,25 @@
         list-style: none;
         padding: 0;
         margin: 0;
+        /* border: 2px solid pink; */
     }
 
-    form li + li
+    form li
     {
-        margin-top: 1em;
+        margin-top: 0.5em;
+        /* border: 2px solid turquoise; */
     }
 
     label
     {/*Tamaño y alineación uniforme*/
-        display: inline-block;
+        display: inline-flex;
         width: 140px;
         text-align: center;
         border: 2px solid #000;
         border-radius: 1em;
         padding: 5px;
-        background-color: cornflowerblue;
+        background-color: #001933;
+        margin-right: 10px;
     }
 
     #mensaje
@@ -471,7 +584,6 @@
         box-sizing: border-box;
         /*Hacer coincidir los bordes del campo del formulario*/
         border: 1px solid #999;
-
     }
 
     input:focus, textarea:focus
@@ -519,6 +631,8 @@
 
  <!-- COMIENZO DEL CUERPO DEL PORTAFOLIO -->
  <body>
+
+<div class="contenedor_general">
      <!-- Barra de navegacion -->
     <header id="nav_bar">
         <nav>
@@ -575,12 +689,24 @@
                 -->
 
     <header class="form_body">
-        <h1>MANTENTE EN CONTACTO :)</h1>
+
+        <div class="form_title">
+            <h1 class="form_title_msg">MANTENTE EN CONTACTO</h1>
+            <div class="zinnia_form"></div>
+        </div>
+
         <p>Si deseas conocer mas sobre mi trabajo o contactarme para ayudarte en un proyecto, puedes llenar el siguiente formulario y te responderé a la brevedad.</p>
     
         <!-- VENTANA EMERGENTE QUE NOS DIRA QUE LOS DATOS HAN SIDO ENVIDADOS EXITOSAMENTE-->
         <div class="emergent_box" id="e_box_id">
-            CUADRO DE PRUEBA
+            <!-- CAJA DEL TEXTO DE AGRADECIMIENTO -->
+            <div class="gratefulness_box">
+                <p class="gratefulness_msg">Gracias por contactarse con nosotros, <br>le responderemos a la brevedad.</p>
+                <div class="zinnia_thanks"></div>
+            </div>
+            <div class="button_sectionbox">
+                <button class="close_button" onclick="box_close()">Cerrar</button>
+            </div>
         </div>
 
         <div id="Contacto">
@@ -665,6 +791,7 @@
     <p>Inserta tu lema aqui XD</p>
 </footer>
 
+</div>
  </body>
 
  <!--/////////////////////////////////////////////////////////////////////-->
@@ -1320,6 +1447,11 @@ function box_action()
     ajax_request.send(form_data);
 
     //window.open("enviar_formulario.php");
+}
+
+function box_close()
+{
+    document.getElementById("e_box_id").style.display="none";
 }
 
 </script>
