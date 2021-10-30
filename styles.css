@@ -641,6 +641,7 @@ textarea
         padding: 10px;
         width: max-content;
         color: rgb(43, 152, 255);
+        background: transparent;
         
         -webkit-text-fill-color:currentColor;
     }
@@ -800,6 +801,7 @@ textarea
     .form_title_msg
     {
         margin-right: 30px;
+        background: transparent;
         -webkit-text-fill-color:currentColor;
         color: #008888;
     }
