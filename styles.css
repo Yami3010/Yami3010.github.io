@@ -1,7 +1,7 @@
 html
 {
     scroll-behavior: smooth;
-    scroll-padding: 160px;
+    scroll-padding: 280px;
     /*Uso de fuente (font) personalizada para toda la pagina*/
     font-family: 'Montserrat',sans-serif;
 }
@@ -628,15 +628,27 @@ textarea
         width: 100%;
     }
 
+    .first_title_textbox
+    {
+        margin: 25px auto 0px auto;
+        color: white;
+        background-color: #190032;
+    }
+
+    .first_title
+    {
+        margin: 5px auto 5px auto;
+        padding: 10px;
+        width: max-content;
+        color: rgb(43, 152, 255);
+        
+        -webkit-text-fill-color:currentColor;
+    }
+
     #nav_bar
     {
         /* background-color: #00CCCC; */
-        text-align: center;
-        margin: auto;
-        border-radius: 0;
-        box-sizing: border-box;
-        width: 100%;
-        padding: 10px 0px 10px 0px;
+        z-index: 100;
     }
 
     .nav_item
@@ -646,7 +658,7 @@ textarea
     }
 
     .nav_item:link
-    {
+    { 
         background-color: #6767B5;
         font-size: 9px;
         width: 15%;
@@ -677,6 +689,7 @@ textarea
     {
         margin-top: -50px;
         font-size: 20px;
+        width: 90%;
     }
 
     /*Seccion de los placeholders de los proyectos*/
@@ -787,7 +800,8 @@ textarea
     .form_title_msg
     {
         margin-right: 30px;
-        /* border:lawngreen solid 2px; */
+        -webkit-text-fill-color:currentColor;
+        color: #008888;
     }
 
         /*Cuerpo del formulario*/
