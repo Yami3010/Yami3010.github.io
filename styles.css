@@ -701,6 +701,7 @@ textarea
         display: block;
         height: min-content;
         box-sizing: border-box;
+        background-color: #000A33;
     }
 
     div.Proyectos
