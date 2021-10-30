@@ -649,7 +649,7 @@ textarea
     {
         background-color: #6767B5;
         font-size: 9px;
-        width: 18%;
+        width: 15%;
         margin: 5px;
     }
 
@@ -697,6 +697,8 @@ textarea
         margin: 5% auto 10%;
         box-sizing: border-box;
         padding: 10px;
+        border: 3px solid rgb(38, 186, 212);
+        border-radius: 1em;
     }
 
     div.Proyectos2
@@ -774,9 +776,61 @@ textarea
 
     /* SECCION DEL FORMULARIO */
 
+        /*Cuadro del titulo del formulario*/
+    .form_title
+    {
+        width: 95%;
+        box-sizing: border-box;
+        /* border: 2px solid hotpink; */
+    }
+
+    .form_title_msg
+    {
+        margin-right: 30px;
+        /* border:lawngreen solid 2px; */
+    }
+
+        /*Cuerpo del formulario*/
+
+    #formulario
+    {
+        width: 80%;
+    }
+
+    label
+    {
+        display: block;
+        margin: 10px auto 10px auto;
+    }
+
     input,textarea
     {
-        width: 30%;
+        display: block;
+        margin: 20px auto 20px auto;
+        width: 90%;
+    }
+
+    #mensaje
+    {
+        width: 95%;
+        display: block;
+        margin: 20px auto 20px auto;
+    }
+
+    /*Seccion de redes sociales*/
+
+    #socialmedia_generalcontainer
+    {
+        width: 90%;
+        margin: auto;
+    }
+
+    #socialmedia_container
+    {
+        display: flex;
+        width: 100%;
+        font-size: 15px;
+        /* border: lawngreen 2px solid; */
     }
 
 }
