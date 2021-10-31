@@ -7,21 +7,23 @@ html
 }
 
 /*prueba de cambios*/
-
+/*Nota: el color del background para toda la pagina debe ponerse en el
+body, ya que si lo ponemos en el contenedor general, este se detendra
+o ya no mostrara mas color en el margen inferior
+*/
 .contenedor_general
 {
-    background-color: black;
     width: 100%;
 }
 
-body{
+body
+{
    margin: 0;
    padding: 0;
-
    color: white;
-   /* background-image: url("space_demo.png"); */
+   background-image: url("space_demo.png");
    width: 100%;      
-   }
+}
 
 header /*TODOS LOS HEADERS tendrán texto centrado y estaran centrados*/
 {
@@ -381,6 +383,12 @@ h1.Project_title2
    margin-top: 20px;
 }
 
+.div_socialmedia_placeholder a
+{
+    color: white;
+    text-decoration: none;
+}
+
            /*Cuadro de titulo del formulario*/
 
 .form_title
@@ -609,11 +617,10 @@ textarea
 .footer
 {
    text-align: center;
-   margin: 10px auto 10px auto;
-   width: 70%;
-
-   border: 1px white solid;
-   border-radius: 2em;
+   font-size: 8px;
+   margin-top: 30px;
+   margin-bottom: 0px;
+   text-decoration: underline;
 }
 
 /* APARTADO PARA UN RESPONSIVE EN MOBILE */
