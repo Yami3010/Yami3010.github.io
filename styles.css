@@ -272,7 +272,7 @@ h1.Project_title2
 
 .rin_prueba
 {
-   content: url("rin_prueba2.png");
+   /* content: url("rin_prueba2.png"); */
    width: 50%; /* Definir de acuerdo al ancho de la imagen */
    margin-top: 5%;
    border-radius: 2em; 
@@ -677,7 +677,7 @@ textarea
 
    .rin_prueba
    {
-       content: url("zinnia_appicon.png");
+       /* content: url("zinnia_appicon.png"); */
        width: 30%; /* Definir de acuerdo al ancho de la imagen */
        margin-top: 0;
        margin-left: 15%;
