@@ -889,7 +889,7 @@ textarea
 
     .rin_prueba
     {
-        content: url("zinnia_appicon.png");
+        /* content: url("zinnia_appicon.png"); */
         width: 35%; /* Definir de acuerdo al ancho de la imagen */
         margin-top: 0;
         margin-left: 15%;
