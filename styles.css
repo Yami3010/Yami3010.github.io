@@ -196,7 +196,7 @@ border-radius: 2em;
     /* Aqui en "grid-template-columns" se define el WIDTH del objeto a cuadricular 
     Here, on "grid-template-columns" it's defined the width of the object to be gridded
     */
-   grid-template-columns: 20% 20% 20%;
+   grid-template-columns: 20% 20%;
    grid-column-gap: 8%;  
 
    justify-items: center;
@@ -306,7 +306,7 @@ h1.Project_title2
 {
    width: max-content;
    text-shadow: 3px 3px 8px black;
-   margin: auto auto auto auto;
+   margin: auto auto 30px auto;
    text-align: center;
    text-justify: auto;
    background-color: #001933;
@@ -319,7 +319,7 @@ h1.Project_title2
 {
    width: max-content;
    text-shadow: 3px 3px 8px black;
-   margin: auto;
+   margin: auto auto 30px auto;
    text-align: center;
    text-justify: auto;
    background-color: #1161b6;
@@ -351,6 +351,65 @@ h1.Project_title2
    margin: 10px auto 10px auto;
    border-bottom: 5px #009999 solid;
    width: max-content;
+}
+
+/* .Link_title
+{
+    color: #CCCCFF;
+    text-shadow: 3px 3px 8px white;
+    border-bottom: 5px transparent solid;
+    width: max-content;
+    margin: 10px auto 10px auto;
+} */
+
+.Link_description
+{
+   width: max-content;
+   text-shadow: 3px 3px 8px black;
+   margin: 0px auto 100px auto;
+   text-align: center;
+   text-justify: auto;
+   background-color: black;
+   border: 2px #330066 solid;
+   border-radius: 0.4em;
+   padding: 5px;
+}
+
+.Link_description2
+{
+    width: max-content;
+    text-shadow: 3px 3px 8px black;
+    margin: auto;
+    text-align: center;
+    text-justify: auto;
+    background-color: black;
+    border: 2px #330066 solid;
+    border-radius: 0.4em;
+    padding: 5px;
+}
+
+.Link_description:link, .Link_description2:link
+{
+    text-decoration: none;
+    color: white;
+}
+
+.Link_description:visited, .Link_description2:visited
+{
+    text-decoration: none;
+    color: white;
+}
+
+.Link_description:hover, .Link_description2:hover
+{
+    text-decoration: none;
+    color: #CC0066;
+}
+
+.Link_description:active, .Link_description2:active
+{
+    text-decoration: none;
+    color: white;
 }
 
             /*SECCION DE REDES SOCIALES(SOCIAL MEDIA)*/  
@@ -724,6 +783,11 @@ textarea
        margin: 0;
    }
 
+   .Link_description
+   {
+       display: none;
+   }
+
     /* SECCION DEL FORMULARIO */   
 
    #formulario
@@ -934,6 +998,11 @@ textarea
         box-sizing: border-box;
         border: 2px solid red;
         margin: 0;
+    }
+
+    .Link_description
+    {
+        display: none;
     }
 
     /* SECCION DEL FORMULARIO */

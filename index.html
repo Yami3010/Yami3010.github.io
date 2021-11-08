@@ -153,7 +153,7 @@
         <img src="icono_twitter.png" width="55%" style="border-radius: 1em;">
     </li>
     <li style="margin-top: 15px;">
-        <a href="https://duckduckgo.com/">TWITTER</a>
+        <a href="https://twitter.com/RodrigoYami3010">TWITTER</a>
     </li>
 </ul>
     </div>
@@ -164,7 +164,7 @@
                 <img src="icono_insta.png" width="55%" style="border-radius: 1em;">
             </li>
             <li style="margin-top: 15px;">
-                <a href="https://duckduckgo.com/">INSTAGRAM</a>
+                <a href="https://www.instagram.com/rodrigomartinez3010/">INSTAGRAM</a>
             </li>
         </ul>
             </div>
@@ -175,7 +175,7 @@
                 <img src="icono_link.png" width="55%" style="border-radius: 1em;">
             </li>
             <li style="margin-top: 15px;">
-                <a href="https://duckduckgo.com/">LINKEDIN</a>
+                <a href="https://www.linkedin.com/in/rodrigo-martinez-301024045214/">LINKEDIN</a>
             </li>
         </ul>
             </div>
@@ -206,21 +206,27 @@
         proyect_name: "ZINNIA'S TIME",
         src: 'zinnia_appicon.png', 
         descripcion: 'A mobile application designed to help you to be more productive in your activities, where you can see your progress In all of them, building your path to be the best form of you each day.',
-        technologies: 'Android Studio, Java, Kotlin'
+        technologies: 'Android Studio, Java, <br>Kotlin, SQL, Firebase',
+        link_name: "Zinnia's time in Google Play",
+        links: 'https://play.google.com/store/apps/details?id=com.yami3010.testapp1'
         }
 
-        ,{ 
-        proyect_name: "ZINNIA'S TIME <br /> (Browser's port)",
-        src: 'zinnia_appicon.png', 
-        descripcion: 'Descripcion 2: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt vero similique, eius molestiae sequi nobis perspiciatis nam amet inventore tempore assumenda. Odio dolores veritatis quo aut aspernatur commodi, reiciendis suscipit.',
-        technologies:''
-        }
+        // ,{ 
+        // proyect_name: "ZINNIA'S TIME <br /> (Browser's port)",
+        // src: 'zinnia_appicon.png', 
+        // descripcion: 'Descripcion 2: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt vero similique, eius molestiae sequi nobis perspiciatis nam amet inventore tempore assumenda. Odio dolores veritatis quo aut aspernatur commodi, reiciendis suscipit.',
+        // technologies:'',
+        // link_name: 'Este es el link',
+        // links: 'https://play.google.com/store/apps/details?id=com.yami3010.testapp1'
+        // }
 
         ,{ 
         proyect_name: 'PORTAFOLIO',
         src: 'zinnia_sitting_2.png', 
         descripcion: 'A web page where people can know who I am, what I do and have a very quick view of all the proyects that I have done and also very proud of them.<br><br>All the projects that are here have been developed by me with a lot of dedication and efford having the ideal of give a help to the sociaty, feel free to check one by one and let me know what do you think about them. That will be helpful for me.',
-        technologies:'HTML, CSS and Javascript'
+        technologies:'HTML, CSS and Javascript',
+        link_name: 'Página web',
+        links: 'https://portafolio-rodrigo-martinez.000webhostapp.com/'
         }
 
         /*
@@ -262,7 +268,7 @@
     proyectos.style.background = '#000A33';
     let id_count = 0;
 
-     function proyect_maker(proyect_name,src,descripcion,technologies)
+     function proyect_maker(proyect_name,src,descripcion,technologies,link_name,links)
      {
         /*  CREACION DE VARIABLES*/
         let div = document.createElement("div");
@@ -272,6 +278,8 @@
         let p  = document.createElement("p"); 
         let tec_title = document.createElement("p");
         let tech = document.createElement("p");
+        // let link_title = document.createElement("p");
+        let link = document.createElement("a");
 
         /*  ASIGNACION DE DATOS A VARIABLES*/
         //Div GENERAL (CONTENEDOR DE TODO EL PROYECTO)
@@ -307,6 +315,17 @@
         tech.className = 'tech_description';
         tech.id = 'tech'+id_count;
 
+        //LINKS HEADER
+        // link_title.innerHTML = 'Link del proyecto:';
+        // link_title.id = 'link_title'+id_count;
+        // link_title.className = 'Link_title';
+
+        //Links de los proyectos
+        link.innerHTML = link_name;
+        link.className = 'Link_description';
+        link.id = 'link'+id_count;
+        link.href = links;
+
         //Contador para generar los id de todos los elementos
         id_count++;
 
@@ -317,6 +336,8 @@
         div.appendChild(p);
         div.appendChild(tec_title);
         div.appendChild(tech);
+        // div.appendChild(link_title);
+        div.appendChild(link);
 
         /*AGREGAR EL DIV AL CONTENEDOR (GRID)*/
         proyectos.appendChild(div);
@@ -324,7 +345,7 @@
 
      }
 
-     datos.forEach(({proyect_name, src, descripcion,technologies}) => proyect_maker(proyect_name, src, descripcion,technologies))
+     datos.forEach(({proyect_name, src, descripcion,technologies, link_name,links}) => proyect_maker(proyect_name, src, descripcion,technologies, link_name,links))
 
 /*FUNCION PARA CAMBIO DE COLORES EN EL BORDE DEL PROYECTO QUE SE SELECCIONE*/
 
@@ -335,6 +356,7 @@
    var tech0 = document.getElementById("tech0");
    var desc_title0 = document.getElementById("desc_title0");
    var tech_title0 = document.getElementById("tech_title0");
+   var link0 = document.getElementById("link0");
 
    var element1 = document.getElementById("div1");
    var title1 = document.getElementById("title1");
@@ -342,13 +364,15 @@
    var tech1 = document.getElementById("tech1");
    var desc_title1 = document.getElementById("desc_title1");
    var tech_title1 = document.getElementById("tech_title1");
+   var link1 = document.getElementById("link1");
 
-   var element2 = document.getElementById("div2");
-   var title2 = document.getElementById("title2");
-   var description2 = document.getElementById("description2");
-   var tech2 = document.getElementById("tech2");
-   var desc_title2 = document.getElementById("desc_title2");
-   var tech_title2 = document.getElementById("tech_title2");
+//    var element2 = document.getElementById("div2");
+//    var title2 = document.getElementById("title2");
+//    var description2 = document.getElementById("description2");
+//    var tech2 = document.getElementById("tech2");
+//    var desc_title2 = document.getElementById("desc_title2");
+//    var tech_title2 = document.getElementById("tech_title2");
+//    var link2 = document.getElementById("link2");
 
    /*
    var element3 = document.getElementById("div3");
@@ -399,6 +423,7 @@ window.onload = function()
     tech0.className = 'tech_description2';
     desc_title0.className = 'Description_title2';
     tech_title0.className = 'Description_title2';
+    link0.className = 'Link_description2';
 
     element0.style.animation = 'move1 1s 1';
     element0.style.animationFillMode = "forwards";
@@ -432,6 +457,7 @@ window.onload = function()
         tech0.className = 'tech_description'
         desc_title0.className = 'Description_title';
         tech_title0.className = 'Description_title';
+        link0.className = 'Link_description';
 
         element0.style.animation = 'move2 1s 1';
         element0.style.animationFillMode = "forwards";
@@ -451,6 +477,7 @@ window.onload = function()
     tech1.className = 'tech_description2';
     desc_title1.className = 'Description_title2';
     tech_title1.className = 'Description_title2';
+    link1.className = 'Link_description2';
 
     element1.style.animation = 'move1 1s 1';
     element1.style.animationFillMode = "forwards";
@@ -484,6 +511,7 @@ window.onload = function()
         tech1.className = 'tech_description'
         desc_title1.className = 'Description_title';
         tech_title1.className = 'Description_title';
+        link1.className = 'Link_description';
 
         element1.style.animation = 'move2 1s 1';
         element1.style.animationFillMode = "forwards";
@@ -493,56 +521,58 @@ window.onload = function()
 
         // El contenido de esta funcion se ejecutara cuanso el mouse
 	// pase por encima del elementO
-    element2.onmouseover = function()
-    {
-    //proyectos.style.background = '#99CCFF';
-    element2.className = 'Proyectos2';
-    title2.className = 'Project_title2';
-    description2.className = 'proyect_description2';
-    tech2.className = 'tech_description2';
-    desc_title2.className = 'Description_title2';
-    tech_title2.className = 'Description_title2';
+    // element2.onmouseover = function()
+    // {
+    // //proyectos.style.background = '#99CCFF';
+    // element2.className = 'Proyectos2';
+    // title2.className = 'Project_title2';
+    // description2.className = 'proyect_description2';
+    // tech2.className = 'tech_description2';
+    // desc_title2.className = 'Description_title2';
+    // tech_title2.className = 'Description_title2';
+    // link2.className = 'Link_description2';
 
-    //Animation UP instructions
-    element2.style.animation = 'move1 1s 1';
-    element2.style.animationFillMode = "forwards";
+    // //Animation UP instructions
+    // element2.style.animation = 'move1 1s 1';
+    // element2.style.animationFillMode = "forwards";
 
-        //Si la funcion no se ha activado entonces, la activamos y especificamos que se ha activado.
-        if(estabilizador == 0)
-        {
-            //LLamamos a la funcion de color.
-            colorchange(element2);
-            //Indicamos que la funcion esta ejecutandose.
-            estabilizador = 1;
-            regulador = 1;
-        }
+    //     //Si la funcion no se ha activado entonces, la activamos y especificamos que se ha activado.
+    //     if(estabilizador == 0)
+    //     {
+    //         //LLamamos a la funcion de color.
+    //         colorchange(element2);
+    //         //Indicamos que la funcion esta ejecutandose.
+    //         estabilizador = 1;
+    //         regulador = 1;
+    //     }
 
-        //Indicamos que la funcion esta activada,
-        else
-        {
-            console.log("La funcion esta activada");
-        }
+    //     //Indicamos que la funcion esta activada,
+    //     else
+    //     {
+    //         console.log("La funcion esta activada");
+    //     }
     
-    }
+    // }
 
-    // El contenido de esta funcion se ejecutara cuanso el mouse
-	// pase por encima del elemento
-    element2.onmouseleave = function()
-    {
-        estabilizador = 0;
-        element2.className="Proyectos";
-        title2.className = 'Project_title';
-        description2.className = 'proyect_description';
-        tech2.className = 'tech_description'
-        desc_title2.className = 'Description_title';
-        tech_title2.className = 'Description_title';
+    // // El contenido de esta funcion se ejecutara cuanso el mouse
+	// // pase por encima del elemento
+    // element2.onmouseleave = function()
+    // {
+    //     estabilizador = 0;
+    //     element2.className="Proyectos";
+    //     title2.className = 'Project_title';
+    //     description2.className = 'proyect_description';
+    //     tech2.className = 'tech_description'
+    //     desc_title2.className = 'Description_title';
+    //     tech_title2.className = 'Description_title';
+    //     link2.className = 'Link_description';
 
-        //Animation DOWN instructions
-        element2.style.animation = 'move2 1s 1';
-        element2.style.animationFillMode = "forwards";
+    //     //Animation DOWN instructions
+    //     element2.style.animation = 'move2 1s 1';
+    //     element2.style.animationFillMode = "forwards";
 
-        element2.style.borderColor = "white";
-    }
+    //     element2.style.borderColor = "white";
+    // }
 
     /*
     // El contenido de esta funcion se ejecutara cuanso el mouse
